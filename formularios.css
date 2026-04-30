@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    height: 500px;
+    margin: 20px;
+    background-color: #0d0d0d9a;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease;
+    border: solid thin rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+}
+
+.informacion {
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0d0d0db2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-inicio {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-inicio h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 30px;
+    color:#c3c2c2;
+}
+
+.info-inicio p {
+    margin: 30px;
+    color: #8A8A8A;
+}
+
+.info-inicio input {
+    color: #8A8A8A;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000000;
+    outline: none;
+    border: 2px solid #00000000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.info-inicio input:hover {
+    outline: none;
+    background-color: #8A8A8A;
+    color: #c3c2c2;
+    border: 2px solid #8a8a8a00;
+    transition: background-color 0.5s ease;
+}
+
+.form-informacion {
+    width: 60%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-registro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-registro h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #F5F5F5; 
+    width: 100%;
+    padding: 0 50px;
+}
+
+.info-registro p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c3c2c2; 
+    width: 100%;
+}
+
+figure i {
+    font-size: 1.3rem;
+    margin: 20px 5px;
+    cursor: pointer;
+    color: #2B2B2B;
+    background-color: #000000a1;
+    border: 2px solid #00000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+figure i:hover {
+    transition: all 0.5s ease;
+    color: #561111;
+    background-color: #8C1D1D;
+    border: 2px solid #8c1d1d00;
+}
+
+i {
+    font-size: 1rem;
+    color: #8C1D1D;
+}
+
+form {
+    margin: 10px 0 0 0;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #E8CFC4;
+    background-color: #E8CFC4;
+}
+
+form input {
+    margin: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 1px;
+    color: #F5F5F5;
+    font-size: 0.7rem;
+}
+
+.registrarse {
+    width: 85%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #8C1D1D;
+    background-color: #220000;
+    border: 2px solid #220000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.registrarse:hover {
+    outline: none;
+    color: #741919;
+    background-color: #110000;
+    border: 2px solid #00000000;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .informacion, .form-informacion {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .info-inicio h2, .info-registro h2 {
+        font-size: 1.5rem;
+    }
+    
+    .info-inicio p, .info-registro p {
+        font-size: 0.9rem;
+    }
+}
