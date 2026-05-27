@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Link para las fuentes -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,38 +13,47 @@
             <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
             <!-- Link para los estilos -->
             <link href="../css/formularios.css" rel="stylesheet">
-            <link href="../css/header.css" rel="stylesheet">
-        <title>Registro</title> 
+            <link href="../css/header1.css" rel="stylesheet">
+        <title>Registrarse</title>
     </head>
-
-<body style="background-image: url(../Img/Tatuador.jpg);">
+<body>
 
 <header class="header">
-<main class="logo">
-    <img src="../Img/Logo.png" width="65" height="50" alt="Logo de la marca">
-</main>
-<nav>
+<nav class="nav-bar">
+    <figure class="logo">
+        <img src="../Img/logo.png" alt="Logo">
+    </figure>
     <ul class="nav-links">
-        <li><a href="Tatuajes.html">Tatuajes</a></li>
-        <li><a href="Artistas.html">Artistas</a></li>
-        <li><a href="Login.html">Iniciar sesión</a></li>
-        <li><a href="Registro.html">Registrarse</a></li>
-    </ul>
-    <ul class="nav-links-mobile">
         <li><a href="#Inicio">Inicio</a></li>
         <li><a href="#Artistas">Artistas</a></li>
         <li><a href="#Diseños">Diseños</a></li>
+        <li><a class="btn-cita" href="#Reservar">Reservar cita</a></li>
+        <li><i class="bx bx-search"></i></li>
+        <li><i href="" class="bxf bx-heart"></i></li>
     </ul>
-    <button class="btn-primario">Reservar cita</button>
 </nav>
-</header>   
-                                                                                                        
+
+<section class="top-bar">
+    <ul class="bar-info">
+        <li><i class="bxf bx-user-id-card"></i>Estudio certificado • Materiales esterilizados</li>
+        <li><i class="bxf bx-check"></i>+100 tatuajes realizados • +90 clientes satisfechos</li>
+        <li><i class="bx bx-calendar-event"></i>Atención con cita previa • ¡Agenda tu cita ahora!</li>
+        <li><i class="bxf bx-people-handshake"></i>Sin compromiso inicial</li>
+    </ul>
+    <nav class="bar-social">
+        <a href="https://www.facebook.com/milessaa"><i class="bxl bx-facebook"></i></a>
+        <a href="instagram.com/"><i class="bxl bx-instagram"></i></a>
+        <a href="https://wa.me/3005264923"><i class="bxl bx-whatsapp"></i></a>
+    </nav>
+</section>
+</header>
+
 <section class="contenedor">
     <article class="informacion"> 
         <header class="info-inicio">
             <h2>¡Bienvenido de nuevo!</h2>
             <p>Inicia sesión para seguir disfrutando de nuestros servicios</p>
-            <input type="button" value="Iniciar sesión" onclick="window.location.href='Login.html'"> 
+            <input type="button" value="Iniciar sesión" onclick="window.location.href='login.html'"> 
         </header>
     </article>
     <article class="form-informacion">
@@ -61,28 +70,20 @@
         <form>
             <label>
                 <i class="bxf bx-user"></i>
-                <input type="text" placeholder="Nombre Completo">
+                <input class="datos" type="text" placeholder="Nombre Completo">
             </label>
             <label>
                 <i class="bxf bx-envelope-alt"></i>
-                <input type="email" placeholder="Correo electrónico">
+                <input class="datos" type="email" placeholder="Correo electrónico">
             </label>
             <label>
                 <i class="bxf bx-key"></i>
-                <input type="password" placeholder="Contraseña"> 
+                <input class="datos" type="password" placeholder="Contraseña"> 
             </label>
-            <input class="registrarse" type="submit" value="Registrarse">
+            <input class="registrarse" type="submit" value="Registrarse" onclick="window.location.href='index.html'">
         </form>
         </header>
     </article>
 </section>
-                                                                                                        
-    <footer>
-    <ul>
-        <li><a href="https://wa.me/573005264923">¡Contactanos!</a> <img src="Img/Whatsapp.jpg" width="20" height="20" alt=""></li>
-        <li><a href="Servicios.html">Más de nosotros</a></li>
-        <li><a href="Trabajo.html">¡Trabaja con nosotros!</a></li>
-    </ul>
-    </footer>
 </body>
 </html>

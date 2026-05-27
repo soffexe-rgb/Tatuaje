@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Link para las fuentes -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,50 +12,74 @@
             <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
             <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
             <!-- Link para los estilos -->
-            <link rel="stylesheet" href="estilos.css">
-            <title>Iniciar Sesión</title> 
+            <link href="../css/formularios.css" rel="stylesheet">
+            <link href="../css/header1.css" rel="stylesheet">
+        <title>Iniciar sesión</title>
     </head>
+<body background-image="../Img/tatuador.jpg">
 
-<body>
-<header>
-    <h1>
-        <img src="Img/Logo.png" width="35" height="25" alt="">
-        Tatuajes
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="Home.html">Inicio</a></li>
-            <li><a href="Tatuajes.html">Tatuajes</a></li>
-            <li><a href="Artistas.html">Artistas</a></li>
-        </ul>
-    </nav>
-</header>
-                                                                                                        <br>
-    <h2>Iniciar sesión</h2>
-    <form action="">
-        <label for="">Usuario</label>
-            <input type="text">
-            <br><br>
-        <label for="">Contraseña</label>
-            <input type="password">
-            <br><br>
-        <input type="submit" value="Iniciar sesión">
-        <h3>¿olvidaste tu contraseña? <a href="Recuperar.html">¡Recuperala aquí!</a></h3>
-        <h3>¿No tienes cuenta? <a href="Registro.html">Registrate aquí</a></h3>
-        <ul>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/250px-Google_Favicon_2025.svg.png" width="20" height="15" alt=""></li>
-            <li><img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/415/small/instagram-logo-instagram-icon-transparent-free-png.png" width="30" height="25" alt=""></li>
-            <li><img src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" width="30" height="25" alt=""></li>
-            <li><img src="https://images.seeklogo.com/logo-png/29/3/facebook-icon-logo-png_seeklogo-290339.png" width="20" height="15" alt=""></li>
-        </ul>
-    </form>
-                                                                                                        <br><br>
-<footer>
-    <ul>
-        <li><a href="https://wa.me/573005264923">¡Contactanos!</a> <img src="Img/Whatsapp.jpg" width="20" height="20" alt=""></li>
-        <li><a href="Servicios.html">Más de nosotros</a></li>
-        <li><a href="Trabajo.html">¡Trabaja con nosotros!</a></li>
+<header class="header">
+<nav class="nav-bar">
+    <figure class="logo">
+        <img src="../Img/logo.png" alt="Logo">
+    </figure>
+    <ul class="nav-links">
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Artistas">Artistas</a></li>
+        <li><a href="#Diseños">Diseños</a></li>
+        <li><a class="btn-cita" href="#Reservar">Reservar cita</a></li>
+        <li><i class="bx bx-search"></i></li>
+        <li><i href="" class="bxf bx-heart"></i></li>
     </ul>
-</footer>
+</nav>
+
+<section class="top-bar">
+    <ul class="bar-info">
+        <li><i class="bxf bx-user-id-card"></i>Estudio certificado • Materiales esterilizados</li>
+        <li><i class="bxf bx-check"></i>+100 tatuajes realizados • +90 clientes satisfechos</li>
+        <li><i class="bx bx-calendar-event"></i>Atención con cita previa • ¡Agenda tu cita ahora!</li>
+        <li><i class="bxf bx-people-handshake"></i>Sin compromiso inicial</li>
+    </ul>
+    <nav class="bar-social">
+        <a href="https://www.facebook.com/milessaa"><i class="bxl bx-facebook"></i></a>
+        <a href="instagram.com/"><i class="bxl bx-instagram"></i></a>
+        <a href="https://wa.me/3005264923"><i class="bxl bx-whatsapp"></i></a>
+    </nav>
+</section>
+</header>
+
+<section class="contenedor">
+    <article class="informacion"> 
+        <header class="info-inicio">
+            <h2>¡Bienvenido!</h2>
+            <p>Crea tu cuenta para empezar a disfrutar de nuestros servicios</p>
+            <input type="button" value="Registrarse" onclick="window.location.href='registro.html'"> 
+        </header>
+    </article>
+    <article class="form-informacion">
+        <header class="info-registro">
+            <h2>Inicia sesión</h2>
+            <figure>
+                <i class="bxl bx-google"></i>
+                <i class="bxl bx-facebook"></i>
+                <i class="bxl bx-instagram"></i>
+                <i class="bxl bx-linkedin"></i>
+            </figure>
+        </header>
+        <form>
+            <label>
+                <i class="bxf bx-envelope-alt"></i>
+                <input class="datos"type="email" placeholder="Correo electrónico">
+            </label>
+            <label>
+                <i class="bxf bx-key"></i>
+                <input class="datos" type="password" placeholder="Contraseña"> 
+            </label>
+            <input class="registrarse" type="submit" value="Iniciar sesión" onclick="window.location.href='index.html'">
+            <p>¿Olvidaste tu contraseña? <span href="recuperar.html">Recupérala aquí</span></p>
+        </form>
+        </header>
+    </article>
+</section>
 </body>
 </html>

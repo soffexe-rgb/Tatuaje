@@ -1,208 +1,236 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+  background-image: url('../Img/tatuador.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .contenedor {
-    display: flex;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    max-width: 900px;
-    height: 500px;
-    margin: 20px;
-    background-color: #0d0d0d9a;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: all 1s ease;
-    border: solid thin rgba(0, 0, 0, 0);
-    backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px;
+  background-color: #00000057;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  overflow: hidden;
 }
 
 .informacion {
-    width: 40%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #0d0d0db2;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.info-inicio {
-    width: 100%;
-    padding: 0 30px;
+  padding: 25px 20px;
+  text-align: center;
+  background-color: #000000a8;
 }
 
 .info-inicio h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 30px;
-    color:#c3c2c2;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #c3c2c2;
 }
 
 .info-inicio p {
-    margin: 30px;
-    color: #8A8A8A;
+  margin-bottom: 20px;
+  color: #8A8A8A;
+  line-height: 1.5;
 }
 
 .info-inicio input {
-    color: #8A8A8A;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #000000;
-    outline: none;
-    border: 2px solid #00000000;
-    border-radius: 20px;
-    cursor: pointer;
+  padding: 12px 24px;
+  background-color: #FF6A3D;
+  color: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
 }
 
 .info-inicio input:hover {
-    outline: none;
-    background-color: #8A8A8A;
-    color: #c3c2c2;
-    border: 2px solid #8a8a8a00;
-    transition: background-color 0.5s ease;
+  background-color: #000000;
 }
 
 .form-informacion {
-    width: 60%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-registro {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 25px 20px;
 }
 
 .info-registro h2 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #F5F5F5; 
-    width: 100%;
-    padding: 0 50px;
+  font-size: 1.7rem;
+  color: #F5F5F5;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .info-registro p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #c3c2c2; 
-    width: 100%;
+  text-align: center;
+  color: #c3c2c2;
+  margin-bottom: 15px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 figure i {
-    font-size: 1.3rem;
-    margin: 20px 5px;
-    cursor: pointer;
-    color: #2B2B2B;
-    background-color: #000000a1;
-    border: 2px solid #00000000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-figure i:hover {
-    transition: all 0.5s ease;
-    color: #561111;
-    background-color: #8C1D1D;
-    border: 2px solid #8c1d1d00;
-}
-
-i {
-    font-size: 1rem;
-    color: #8C1D1D;
+  margin: 8px;
 }
 
 form {
-    margin: 10px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 form label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    width: 100%;
-    padding: 0 5px;
-    border: 2px solid #E8CFC4;
-    background-color: #E8CFC4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 2px solid #E8CFC4;
+  background-color: #E8CFC4;
 }
 
-form input {
-    margin: 10px;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 1px;
-    color: #F5F5F5;
-    font-size: 0.7rem;
+.datos {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #F5F5F5;
+  font-size: 0.95rem;
+  outline: none;
 }
 
 .registrarse {
-    width: 85%;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #8C1D1D;
-    background-color: #220000;
-    border: 2px solid #220000;
-    border-radius: 20px;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #FF6A3D;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .registrarse:hover {
-    outline: none;
-    color: #741919;
-    background-color: #110000;
-    border: 2px solid #00000000;
-    border-radius: 20px;
-    transition: background-color 0.5s ease;
+  background-color: #000000;
 }
 
-@media (max-width: 768px) {
-    .contenedor {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .informacion, .form-informacion {
-        width: 100%;
-        border-radius: 20px;
-    }
-    
-    .info-inicio h2, .info-registro h2 {
-        font-size: 1.5rem;
-    }
-    
-    .info-inicio p, .info-registro p {
-        font-size: 0.9rem;
-    }
+form p {
+  text-align: center;
+  color: #c3c2c2;
+  margin-top: 10px;
+}
+
+form p span {
+  color: #FF6A3D;
+  cursor: pointer;
+}
+
+form p span:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .contenedor {
+    max-width: 700px;
+  }
+
+  .info-inicio h2 {
+    font-size: 1.9rem;
+  }
+
+  .info-registro h2 {
+    font-size: 2rem;
+  }
+
+  .registrarse {
+    font-size: 1.05rem;
+  }
+}
+
+/* Portatil */
+@media (min-width: 1085px) {
+  body {
+    font-size: 16px;
+  }
+
+  .contenedor {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+
+  .informacion {
+    width: 40%;
+    padding: 40px 25px;
+    margin: 20px;
+    flex-shrink: 2000;
+  }
+
+  .form-informacion {
+    width: 60%;
+    padding: 40px;
+  }
+
+  form p span:hover {
+  color: #ba4d2b;
+  text-decoration: underline;
+}
+
+  .info-inicio h2 {
+    font-size: 2.2rem;
+  }
+
+  .info-registro h2 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1440px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  .contenedor {
+    max-width: 1200px;
+  }
+
+  .informacion {
+    padding: 50px 30px;
+  }
+
+  .form-informacion {
+    padding: 60px;
+  }
+
+  .info-inicio h2 {
+    font-size: 2.5rem;
+  }
+
+  .info-registro h2 {
+    font-size: 2.6rem;
+  }
 }

@@ -1,0 +1,179 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 120px 20px 60px;
+  background-color: #0D0D0D;
+}
+
+.hero-text {
+  width: 100%;
+  font-size: 12px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background-color: #ffffff4e;
+  color: #000000 !important;
+  font-size: 13px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tag span {
+  color: #FF6A3D;
+  font-weight: 600;
+}
+
+.tag span:hover {
+  color: #d5532c;
+}
+
+.hero-text h1 {
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.hero-text p, .descripción {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #A0A0A0;
+  margin-bottom: 18px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-principal {
+  background-color: #FF6A3D;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-principal:hover {
+  background-color: #c64d29;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ff6a3d39;
+  border: 1px solid #ff6a3d39;
+}
+
+.btn-secundario:hover {
+  background-color: #ff6a3d39;
+  color: #000000;
+  border: 1px solid transparent;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero {
+    padding: 90px 40px 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .hero-image img {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+/* Portatil */
+@media (min-width: 1085px) {
+  .hero {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 120px 70px 100px;
+    min-height: 100vh;
+  }
+
+  .hero-text {
+    width: 60%;
+    font-size: 20px;
+    max-width: 700px;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: 750;
+    max-width: 100%;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  figure {
+    width: 40%;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-image img {
+    max-width: 560px;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1440px) {
+  .hero {
+    padding: 140px 90px 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+
+  .hero-image img {
+    max-width: 620px;
+  }
+}
