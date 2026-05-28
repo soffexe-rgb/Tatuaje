@@ -1,0 +1,161 @@
+footer{
+    width: 100%;
+    background-color: #050505;
+    border-top: 1px solid #111;
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #8B7B74;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer img {
+    width: 120px;
+}
+
+.footer h4{
+    color: #B57D67;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #A0A0A0;
+    margin: 0;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul a{
+  text-decoration: none;
+  color: #8B7B74;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.footer ul a:hover{
+  color: #FF6A3D;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.socials a{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #8B7B74;
+  transition: 0.3s;
+}
+
+.socials a:hover{
+  border-color: #FF6A3D;
+  color: #FF6A3D;
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  color: #5F5F5F;
+  font-size: 13px;
+}
+
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00A651;
+}
+
+
+/* Tablet */
+@media (min-width: 768px){
+
+  footer{
+    padding: 70px 40px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .footer{
+    width: calc(50% - 25px);
+  }
+
+}
+
+
+/* Portatil */
+@media (min-width: 1085px){
+
+  footer{
+    padding: 15px 90px;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer{
+    width: 30%;
+    max-width: 320px;
+  }
+
+  .footer h4{
+    font-size: 14px;
+  }
+
+  .footer p,
+  .footer ul a{
+    font-size: 16px;
+  }
+
+}
+
+
+/* Escritorio */
+@media (min-width: 1440px){
+
+  footer{
+    padding: 100px 90px 70px;
+  }
+
+  .footer{
+    max-width: 350px;
+  }
+
+  .footer p,
+  .footer ul a{
+    font-size: 17px;
+  }
+
+}

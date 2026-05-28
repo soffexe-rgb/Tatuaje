@@ -23,13 +23,13 @@
   transition: 0.3s;
 }
 
-.tag span {
-  color: #FF6A3D;
+.tag a {
+  color: #FF6A3D !important;
   font-weight: 600;
 }
 
-.tag span:hover {
-  color: #d5532c;
+.tag a:hover {
+  color: #d5532c !important;
 }
 
 .hero-text h1 {
@@ -136,7 +136,7 @@ button {
   }
 
   .hero-text h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 750;
     max-width: 100%;
   }
